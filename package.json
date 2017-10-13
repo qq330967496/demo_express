@@ -1,0 +1,23 @@
+{
+  "name": "demo-express",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "express": "^4.15.5"
+  },
+  "description": "express框架demo",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qq330967496/demo_express.git"
+  },
+  "author": "SeverHo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qq330967496/demo_express/issues"
+  },
+  "homepage": "https://github.com/qq330967496/demo_express#readme"
+}
