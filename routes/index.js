@@ -1,9 +1,18 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+
+// 全局请求中间件，第一个参数可以为空，可以指定链接定义中间件
+router.use(function timeLog(req, res, next) {
+    console.log('Time: ', Date.now());
+    console.log('URL:', `[${req.method}]${req.originalUrl}`);
+    // console.log('Request Type:', req.method);
+    next();
+});
+
+//数据获取
+router.get('/getData', function (req, res) {
+    res.send('123');
 });
 
 module.exports = router;
