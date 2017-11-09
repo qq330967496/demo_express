@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-app.use(express.static(__dirname,'web'));
+app.use(express.static('web'));
 
 //路由配置
 app.get('/', function (req, res) {
